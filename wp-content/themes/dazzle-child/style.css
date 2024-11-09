@@ -1,0 +1,64 @@
+/*
+ Theme Name:   Dazzle Child Theme
+ Theme URI:    https://dazzle.themerex.net
+ Description:  Dazzle Child Theme
+ Author:       ThemeREX
+ Author URI:   https://themerex.net/
+ Template:     dazzle
+ Version:      1.0.0    
+ Tags:         fashion store, fashion agency, fashion boutique, designer portfolio, fashion blog, jewelry & accessories, luxury fashion, fashion trends, fashion influencers, fashion showcase, designer collections, fashion photography, jewelry designs, accessory trends, fashion inspiration
+ Text Domain:  dazzle
+*/
+
+
+/* =Theme customization starts here
+------------------------------------------------------------ */
+/* #links-header li a {position:relative;}
+#links-header li a:before {
+    content: "";
+    width: 0;
+    height: 41px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: var(--wdtRadius_Full);
+    -webkit-transition: all cubic-bezier(.47,1.21,.47,1.21) .3s;
+    transition: all cubic-bezier(.47,1.21,.47,1.21) .3s;
+} */
+
+.current-menu-item a span{color:#d6a6ad !important}
+.current-menu-item a:after{background:#d6a6ad !important}
+#menu-item-20211{display:none;}
+
+.sc_layouts_cart .sc_layouts_cart_widget ul.cart_list li a, .sc_layouts_cart .sc_layouts_cart_widget ul.cart_list li > b, .sc_layouts_cart .sc_layouts_cart_widget .total, .sc_layouts_cart .sc_layouts_cart_widget .total *, .sc_layouts_cart .sc_layouts_cart_widget .quantity, .sc_layouts_cart .sc_layouts_cart_widget .quantity *{color:#000 !important;}
+
+.sc_layouts_cart .sc_layouts_cart_widget .widget_shopping_cart_content .buttons a.checkout{color:#d6a6ad !important;border-color:#d6a6ad !important}
+
+.woocommerce ul.products li.product .post_header a:hover{color:#d6a6ad !important;}
+.woocommerce ul.products li.product:hover .post_header a,.woocommerce ul.products li.product:hover .price{background-position: 0 90%;background-size: 100% 5px;}
+.woocommerce ul.products li.product .post_header a ,.woocommerce ul.products li.product .price{
+    display: inline;
+    font-weight: inherit;
+    background-image: linear-gradient(45deg, #bee1e6, #bee1e6);
+    background-repeat: no-repeat;
+    background-position: 0 90%;
+    background-size: 0 10px;
+    -webkit-transition: background-size .5s cubic-bezier(.47,1.21,.47,1.21), color .25s ease-in;
+    transition: background-size .5s cubic-bezier(.47,1.21,.47,1.21), color .25s ease-in;
+}
+
+/* footer */
+#links-footer ul{display:flex !important;align-items: flex-end;}
+#links-footer ul li{margin-right:20px !important;}
+#links-footer ul li a{margin:0 !important;color:#000 !important;}
+footer .widget_custom_links ul>li.custom_links_list_item .custom_links_list_item_title:after{background:#000;}
+footer [class^="icon-"]:before{color:#000 !important}
+footer .socials_wrap a{background:#d6a6ad;border-radius:50%;}
+
+header .sub-menu{background:#d6a6ad !important}
+header .sub-menu *, header .sub-menu a span{color:#fff !important;}
+@media screen and (max-width: 425px){
+	#links-footer ul{display:flex !important;flex-direction:column;;align-items: flex-start;}
+}
